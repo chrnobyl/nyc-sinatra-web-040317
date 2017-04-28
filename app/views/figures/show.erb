@@ -5,9 +5,10 @@
     <title></title>
   </head>
   <body>
+    <%= @figure.name %>
     <ul>
-    <% @landmarks.each do |landmark| %>
-    <li><%= landmark.name %> <%= landmark.year_completed %></li>
+    <% @figure.landmarks.each do |landmark| %>
+    <li><%= landmark.name %></li>
     <% end %>
   </ul>
 
